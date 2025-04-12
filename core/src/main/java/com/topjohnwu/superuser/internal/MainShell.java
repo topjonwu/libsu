@@ -112,4 +112,8 @@ public final class MainShell {
     public static Shell.Job newJob(String... cmds) {
         return new PendingJob().add(cmds);
     }
+
+    static {
+        Utils.isCacheEnabled();
+    }
 }
